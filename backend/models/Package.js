@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
 
 const PackageSchema = new mongoose.Schema({
   title: String,

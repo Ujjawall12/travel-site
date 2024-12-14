@@ -1,10 +1,11 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-require('dotenv').config();
-const packageRoutes = require('./routes/packageRoutes');
-const bookingRoutes = require('./routes/bookingRoutes');
+import express from 'express'
+import mongoose from 'mongoose'
+import cors from 'cors';
+import dotenv from 'dotenv';
 
+dotenv.config();
+import packageRoutes from './routes/packageRoutes'
+import bookingRoutes from './routes/bookingRoutes'
 const app = express();
 
 // Middleware

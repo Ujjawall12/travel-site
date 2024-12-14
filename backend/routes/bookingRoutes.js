@@ -1,5 +1,5 @@
-const express = require('express');
-const { addBooking, getBookings } = require('../controllers/bookingController');
+import express from 'express'
+import { addBooking, getBookings } from "../controllers/bookingController"
 const router = express.Router();
 
 router.post('/', addBooking);
