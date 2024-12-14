@@ -124,25 +124,6 @@ Copy code
 Server running on http://localhost:5000
 Open a browser and go to http://localhost:5000/. You will see the response "Server is running...".
 
-5. Troubleshooting
-Issue 1: require is not defined
-
-Cause: "type": "module" is present in package.json, making the project use ES Modules.
-Solution: Remove "type": "module" or rename index.js to index.cjs.
-Issue 2: MODULE_NOT_FOUND Error
-
-Cause: File paths are incorrect, or dependencies are missing.
-Solution:
-Verify the backend/index.js file exists.
-Reinstall dependencies using:
-bash
-Copy code
-npm install
-Future Enhancements
-Add more routes (e.g., POST, PUT, DELETE) to handle CRUD operations.
-Integrate a frontend UI using React.js or plain HTML/CSS.
-Connect a database like MongoDB or MySQL to store booking data.
-Add error handling, middleware, and API documentation (e.g., using Swagger).
 Conclusion
 This project sets up a basic Node.js and Express.js backend server. It listens for incoming HTTP requests, serves a simple response, and can be extended to include more complex functionality like routing, database integration, and a frontend UI.
 
