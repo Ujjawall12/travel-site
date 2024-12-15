@@ -1,5 +1,5 @@
+const Booking = require('../models/Booking');
 
-import Booking from '../models/Booking'
 exports.addBooking = async (req, res) => {
   try {
     const newBooking = new Booking(req.body);

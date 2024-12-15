@@ -1,5 +1,5 @@
+const Package = require('../models/Package');
 
-import Package from '../models/Package'
 exports.getPackages = async (req, res) => {
   try {
     const packages = await Package.find();

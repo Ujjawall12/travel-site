@@ -1,5 +1,5 @@
+const mongoose = require('mongoose');
 
-import mongoose from 'mongoose'
 const BookingSchema = new mongoose.Schema({
   name: String,
   email: String,

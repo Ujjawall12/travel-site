@@ -1,5 +1,5 @@
-import express from 'express'
-import { getPackages, addPackage, updatePackage, deletePackage } from "../controllers/packageController"
+const express = require('express');
+const { getPackages, addPackage, updatePackage, deletePackage } = require('../controllers/packageController');
 const router = express.Router();
 
 router.get('/', getPackages);
